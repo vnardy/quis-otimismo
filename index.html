@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +7,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="quiz-container">
-        <h1>Bem-vindo ao Quiz do Otimismo</h1>
-        <p id="intro-text">São 48 perguntas de A ou B e demora aproximadamente 15 minutos. <button id="startQuiz">Começar</button></p>
-
-        <div id="question-container">
-            <p id="question">Carregando...</p>
-            <p id="question-number"></p>
-            <button id="optionA" class="option">A</button>
-            <button id="optionB" class="option">B</button>
+    <div class="container">
+        <div class="header">
+            <button id="restart" class="button">Voltar ao Início</button>
         </div>
-
-        <div id="nav-buttons">
-            <button id="btnBackToStart" class="nav-button">Voltar ao Início</button>
-            <button id="btnPrev" class="nav-button">Pergunta Anterior</button>
-            <button id="btnNext" class="nav-button">Pergunta Seguinte</button>
-        </div>
-
-        <div id="result-container" style="display: none;">
-            <h2>Resultados</h2>
-            <p id="totalI">Total de I: </p>
-            <p id="totalS">Total de S: </p>
-            <p id="finalResult">Resultado Final: </p>
+        <div id="quiz-container">
+            <h1>Bem-vindo ao Quiz do Otimismo</h1>
+            <p>São 48 perguntas de A ou B e demora aproximadamente 15 minutos. Começar</p>
+            <button id="start-button" class="button">Começar</button>
+            <div id="question-container" style="display:none;">
+                <p id="question-number"></p>
+                <p id="question-text"></p>
+                <div id="answer-container"></div>
+                <button id="previous-question" class="button" style="display:none;">Pergunta Anterior</button>
+                <button id="next-question" class="button">Pergunta Seguinte</button>
+            </div>
+            <div id="result-container" style="display:none;">
+                <h2>Resultados:</h2>
+                <p id="totalI"></p>
+                <p id="totalS"></p>
+                <p id="finalResult"></p>
+            </div>
         </div>
     </div>
 

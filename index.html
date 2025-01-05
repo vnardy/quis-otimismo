@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz do Otimismo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="quiz-container">
-        <h1>Bem-vindo ao Quiz</h1>
+        <h1>Bem-vindo ao Quiz do Otimismo</h1>
+        <p id="intro-text">São 48 perguntas de A ou B e demora aproximadamente 15 minutos. <button id="startQuiz">Começar</button></p>
+
         <div id="question-container">
             <p id="question">Carregando...</p>
+            <p id="question-number"></p>
             <button id="optionA" class="option">A</button>
             <button id="optionB" class="option">B</button>
         </div>
-        <button id="btnNext">Próxima</button>
+
+        <div id="nav-buttons">
+            <button id="btnBackToStart" class="nav-button">Voltar ao Início</button>
+            <button id="btnPrev" class="nav-button">Pergunta Anterior</button>
+            <button id="btnNext" class="nav-button">Pergunta Seguinte</button>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <h2>Resultados</h2>
+            <p id="totalI">Total de I: </p>
+            <p id="totalS">Total de S: </p>
+            <p id="finalResult">Resultado Final: </p>
+        </div>
     </div>
 
     <script src="script.js"></script>

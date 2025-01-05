@@ -1,64 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
+/* Novo estilo para as opções */
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+}
+
+.selected {
+    background-color: #87CEFA;  /* Azul claro quando selecionado */
+}
+
+.deselected {
+    background-color: #f0f0f0;  /* Volta ao estado inicial quando desmarcado */
+}
+
+/* Estilo da caixa de seleção */
+.option-checkbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f9;
-    margin: 0;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 4px;
 }
 
-#quiz-container {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-button {
-    background-color: #4CAF50;
+.option-checkbox.checked {
+    background-color: #87CEFA;  /* Azul claro quando selecionado */
     color: white;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.option {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-}
-
-h1 {
-    font-size: 24px;
-}
-
-#nav-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.nav-button {
-    background-color: #f44336;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-}
-
-#result-container {
-    margin-top: 20px;
-}
-
-#result-container p {
-    font-size: 18px;
+    font-weight: bold;
 }

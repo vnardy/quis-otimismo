@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Quiz</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="quiz-container">
-    <h1>Bem-vindo ao Quiz</h1>
-    <div id="quiz">
-      <!-- As perguntas serão carregadas aqui dinamicamente pelo JavaScript -->
+    <div id="quiz-container">
+        <h1>Bem-vindo ao Quiz</h1>
+        <div id="question-container">
+            <p id="question">Carregando...</p>
+            <button id="optionA" class="option">A</button>
+            <button id="optionB" class="option">B</button>
+        </div>
+        <button id="btnNext">Próxima</button>
     </div>
-    <button id="next-button">Próxima</button>
-    <div id="result" class="hidden">
-      <h2>Resultado</h2>
-      <p id="result-text"></p>
-      <button id="restart-button">Reiniciar</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

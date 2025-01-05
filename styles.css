@@ -1,65 +1,61 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
 }
 
-.container {
+.quiz-container {
+    width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #2d3e50;
+    text-align: center;
+    color: #333;
+}
+
+.question {
     margin-bottom: 20px;
 }
 
-.button {
+.question p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
-    font-size: 16px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin: 10px;
-}
-
-.button:hover {
-    background-color: #45a049;
-}
-
-#question-container {
+    font-size: 1.1em;
+    border-radius: 5px;
     margin-top: 20px;
 }
 
-#answer-container label {
-    display: block;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 5px 0;
-    cursor: pointer;
+button:hover {
+    background-color: #45a049;
 }
 
-#answer-container input[type="radio"]:checked + label {
-    background-color: #4CAF50;
-    color: white;
+.results {
+    margin-top: 30px;
+    display: none;
 }
 
-#answer-container input[type="radio"]:checked + label:before {
-    content: "✔";
-    color: white;
-    margin-right: 10px;
-}
-
-#answer-container label:hover {
-    background-color: #ddd;
+.results p {
+    font-size: 1.2em;
+    color: #333;
 }

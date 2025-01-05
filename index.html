@@ -7,27 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <button id="restart" class="button">Voltar ao Início</button>
-        </div>
-        <div id="quiz-container">
-            <h1>Bem-vindo ao Quiz do Otimismo</h1>
-            <p>São 48 perguntas de A ou B e demora aproximadamente 15 minutos. Começar</p>
-            <button id="start-button" class="button">Começar</button>
-            <div id="question-container" style="display:none;">
-                <p id="question-number"></p>
-                <p id="question-text"></p>
-                <div id="answer-container"></div>
-                <button id="previous-question" class="button" style="display:none;">Pergunta Anterior</button>
-                <button id="next-question" class="button">Pergunta Seguinte</button>
+    <div class="quiz-container">
+        <h1>Bem-vindo ao Quiz do Otimismo!</h1>
+        <p>São 48 perguntas de A ou B. Vamos ver como você se sai!</p>
+        
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div class="question" id="q1">
+                <p><strong>1. O projeto sob sua responsabilidade foi um grande sucesso. [SPs]</strong></p>
+                <label>
+                    <input type="radio" name="q1" value="1"> A) Fiquei atento ao trabalho de todos
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="0"> B) Todo mundo investiu muito tempo e energia nele
+                </label>
             </div>
-            <div id="result-container" style="display:none;">
-                <h2>Resultados:</h2>
-                <p id="totalI"></p>
-                <p id="totalS"></p>
-                <p id="finalResult"></p>
+
+            <!-- Pergunta 2 -->
+            <div class="question" id="q2">
+                <p><strong>2. Você e seu cônjuge (namorado/namorada) fazem as pazes depois de uma briga. [SPm]</strong></p>
+                <label>
+                    <input type="radio" name="q2" value="0"> A) Eu o/a perdoei
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="1"> B) Costumo perdoar os outros
+                </label>
             </div>
+
+            <!-- Adicionar as outras 46 perguntas aqui seguindo o mesmo padrão -->
+
+            <button type="button" id="calculateBtn">Calcular Resultados</button>
+        </form>
+
+        <div id="results" class="results">
+            <h2>Seus Resultados</h2>
+            <p id="resultText"></p>
         </div>
     </div>
 
